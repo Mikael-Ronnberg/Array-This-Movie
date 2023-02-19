@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Search Movies :)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/src/scss/main.scss">
+    <script defer src="/src/ts/main.ts" type="module"></script>
+
+</head>
+<body>
+    <header class="header-wrapper">
+        <!-- <div class="icon"></div> -->
+        <div class="header-box1">
+            <h2>Movie Schnovie</h2>
+        </div>
+        <div class="header-box2">
+            <h1>Search your favourite movies</h1>
+        </div>
+        <div class="header-box3">
+            <span>Ever wanted to create your own personal watchlist that you can brag about and maybe use in the future? Well, search no more! What we can offer is your personal and customizeable watchlist that, when needed, will fulfill your wildest friday night hang out with your friends. Show them what your favourite movie is on the spot, and tell them why you cried when Hans Grüber fell from the Nagasaki rooftop.</span>
+        </div>
+        <div class="header-box4">
+            <div class="movie1">
+                <div class="movie1-radius">
+                    <i class="bi bi-film"></i>
+                </div>
+            </div>
+            <div class="movie2">
+                <div class="movie2-radius">
+                    <i class="bi bi-disc"></i>
+                </div>
+            </div>
+            <div class="movie3">
+                <div class="movie3-radius">
+                    <i class="bi bi-camera-reels"></i>
+                </div>
+            </div>
+        </div>
+        <form class="input-wrapper" id="SearchForm">
+            <input type="text" id="input-search" placeholder="Movie Title">
+            <!-- <button class="button-32" id="btn-search" type="submit">Search</button> -->
+        </form>
+    </header>
+    
+    <aside class="side-info">
+        <ul>
+            <li><a href=""></a>Check Your Watchlist</li>
+            <li><a href=""></a>Recommended Movies</li>
+        </ul>
+    </aside>
+
+    <main class="main-wrapper">
+        <button class="pre-btn"><i class="bi bi-caret-left-fill"></i></button>
+        <div id="movie-container" class="movie-wrapper"></div>
+        <button class="nxt-btn"><i class="bi bi-caret-right-fill"></i></button>
+    </main>
+
+    <footer class="footer-wrapper">
+        <div class="footer-box1">
+
+        </div>
+        <div class="footer-box2">
+
+        </div>
+        <div class="footer-box3">
+
+        </div>
+    </footer>
+    
+</body>
+</html>

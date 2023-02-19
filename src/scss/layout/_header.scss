@@ -1,0 +1,121 @@
+@use "../variables" as var;
+@use "../mixins/" as mix;
+
+.header-wrapper {
+  font-size: var.$medium-font;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  // padding: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+.header-box1 {
+  background-color: rgb(193, 75, 75);
+  height: 40vh;
+  width: 35vw;
+  padding: 0.5em;
+  writing-mode: vertical-lr;
+  @include mix.tablet {
+    width: 50vw;
+  }
+  @include mix.desktop {
+    width: 100vw;
+  }
+}
+.header-box2 {
+  color: white;
+  background-color: black;
+  height: 40vh;
+  width: 65vw;
+  padding: 1.5em;
+  @include mix.tablet {
+    width: 50vw;
+  }
+  @include mix.desktop {
+    width: 35vw;
+  }
+}
+.header-box3 {
+  width: 100vw;
+  //   height: 20vh;
+  padding: 1.5em;
+  font-size: 0.8rem;
+  background-color: rgb(162, 127, 228);
+  @include mix.tablet {
+    height: 15vh;
+  }
+  @include mix.desktop {
+    width: 65vw;
+    height: 40vh;
+    font-size: 1.4rem;
+  }
+}
+
+.header-box4 {
+  width: 100vw;
+  height: 20vh;
+  font-size: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  i {
+    position: relative;
+    bottom: 16;
+    font-size: 0.8em;
+  }
+  .movie1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: rgb(193, 75, 75);
+    &-radius {
+      background-color: white;
+      border-radius: 50%;
+      text-align: center;
+      color: rgb(87, 182, 249);
+      width: 100px;
+      scale: 1.2;
+    }
+  }
+  .movie2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 182, 249);
+    &-radius {
+      background-color: black;
+      border-radius: 50%;
+      text-align: center;
+      color: white;
+      width: 100px;
+      scale: 1.2;
+    }
+  }
+  .movie3 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 75, 75);
+    &-radius {
+      background-color: white;
+      border-radius: 50%;
+      text-align: center;
+      width: 100px;
+      color: rgb(87, 182, 249);
+      scale: 1.2;
+    }
+  }
+}
+
+.input-wrapper {
+  height: 20vh;
+  width: 100vw;
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
